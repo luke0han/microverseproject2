@@ -1,0 +1,25 @@
+section{
+    padding: 10px;
+}
+#header{
+    font-size: 18px;
+    background-color: #eee;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    padding: 10px;
+    line-height: 10px;
+}
+
+#main{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+    margin-top: 0px;
+    padding 20px;
+}
+ 
+#survey-form{
+    text-align: center;
+    padding: 20px;
+}
