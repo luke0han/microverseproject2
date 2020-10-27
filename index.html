@@ -18,17 +18,17 @@
   <main id="main">
 
     <form action="submit" id="survey-form">
-      <section id="name">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" required></br>
+      <section id="names">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" id="name" placeholder="Enter name here" required></br>
       </section>
-      <section id="email">
-        <label for="email">Email</label>
-        <input type="email" id="email" required placeholder="Email">
+      <section id="emails">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" required placeholder="Enter email here">
       </section id="email">
-      <section id="age">
-        <label for="number">Age</label>
-        <input type="number" id="number" minlength="3" maxlength="100" placeholder="Age">
+      <section id="ages">
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" id="number" min="2" max="100" pattern="[0-9]*" placeholder="Enter age here">
       </section>
       <section>
         <label for="dropdown">Language</label>
@@ -38,15 +38,31 @@
           <option value="ruby">Ruby</option>
         </select>
       </section>
-      <section>
-      <label for="beginner">Beginner Level</label>
-      <input type= "radio" name="skill" value="yes" id="beginer">
-      <label for= "intermediate">Intermediate</label>
-      <input type="radio" name="skill" value="yes" id ="intermediate">
-      <label for="advance">Advance Level</label>
-      <input type= "radio" name="skill" value="yes" id="advance">
+      <label for="skill" id="labs">Skill Level:</label>
+      <section id="skill">
+        <label for="beginner">Beginner Level</label>
+        <input type="radio" name="skill" value="yes" id="beginer">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" name="skill" value="yes" id="intermediate">
+        <label for="advance">Advance Level</label>
+        <input type="radio" name="skill" value="yes" id="advance">
       </section>
-      
+      <label for="resources" id="labs">Resources:</label>
+      <section id="practice">
+        <label for="freecodecamp">Free Code Camp</label>
+        <input type="checkbox" name="freecodecamp" value="freecodecamp">
+        <label for="hackerrank">Hacker Rank</label>
+        <input type="checkbox" name="hackerrank" value="hackerrank">
+        <label for="codecademy">Codecademy</label>
+        <input type="checkbox" name="codecademy" value="codecademy">
+      </section>
+      <label for="comments" id="labs">Comments:</label>
+      <section id="extra">
+        <textarea name="comments" id="comments" cols="40" rows="3"></textarea>
+      </section>
+      <section id="submission">
+        <input type="submit" id="submit">
+      </section>
     </form>
   </main>
   <script src="js/index.js"></script>
